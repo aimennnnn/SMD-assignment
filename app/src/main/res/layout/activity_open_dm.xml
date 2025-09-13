@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+     <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="22dp"
+         android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left" />
+
+         <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/moob"
+            android:background="@drawable/circle"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/avatar"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="22dp"
+            android:layout_centerVertical="true"
+            android:text="thelilghaza"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FF222222" />
+
+        <ImageView
+            android:id="@+id/btnVideo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/info" />
+
+        <ImageView
+            android:id="@+id/btnInfo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toStartOf="@id/btnVideo"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/video_call" />
+    </RelativeLayout>
+
+     <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="720dp"
+         android:gravity="center"
+        android:text="4:49 PM"
+        android:textSize="12sp"
+        android:textColor="#80222222" />
+
+    <TextView
+        android:id="@+id/quickHello"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/inputBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rectangle_1"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Ok"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+     <RelativeLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/inputContainer"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/messagebox">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/camerabl" />
+
+            <EditText
+                android:id="@+id/Message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:hint="Message..."
+                android:textColor="#FF222222"
+                android:textColorHint="#80222222"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/microphone"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/pictureb" />
+
+             <TextView
+                android:id="@+id/gif"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="›"
+                android:textSize="16sp"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/stickers" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

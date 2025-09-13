@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B5C5C">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/flower"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle"
+        android:clipToOutline="true" />
+
+     <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="maryam_moeen"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
+
+     <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="03:12"
+        android:textSize="16sp"
+        android:textColor="#E0E0E0" />
+
+     <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3"
+        android:paddingBottom="40dp"
+        android:paddingTop="20dp">
+
+         <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_agenda"
+             android:layout_gravity="center" />
+
+         <ImageView
+            android:layout_width="10dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_call"
+            android:scaleType="centerInside"
+             android:background="@drawable/endcall"
+            android:layout_gravity="center" />
+
+         <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+             android:layout_gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>
