@@ -1,18 +1,17 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import android.widget.TextView
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class edit_profile : AppCompatActivity() {
+class likedtwo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_edit_profile)
+        setContentView(R.layout.activity_likedtwo)
 
-        val btnCancel = findViewById<TextView>(R.id.btnCancel)
-        btnCancel.setOnClickListener {
+        findViewById<View>(R.id.tvYou).setOnClickListener {
             finish()
         }
     }

@@ -1,20 +1,29 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class story_edit : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_story_edit)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val close = findViewById<ImageView>(R.id.x)
+        close.setOnClickListener {
+            startActivity(Intent(this@story_edit, newsfeed::class.java))
+            finish()
         }
+
+        val btnNext = findViewById<ImageButton>(R.id.btnNext)
+        btnNext.setOnClickListener {
+            startActivity(Intent(this, newsfeed::class.java))
+            finish()
+        }
+
     }
 }
