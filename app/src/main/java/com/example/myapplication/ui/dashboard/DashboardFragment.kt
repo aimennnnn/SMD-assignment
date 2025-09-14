@@ -1,39 +1,38 @@
 package com.example.myapplication.ui.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.myapplication.databinding.FragmentDashboardBinding
+import com.example.myapplication.R
+import com.example.myapplication.other_story
+import com.example.myapplication.Dms
+import com.example.myapplication.story_edit
 
 class DashboardFragment : Fragment() {
-
-    private var _binding: FragmentDashboardBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+    ): View? {
+        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        root.findViewById<ImageView>(R.id.moosvi).setOnClickListener {
+            startActivity(Intent(requireContext(), other_story::class.java))
+        }
 
+         root.findViewById<ImageView>(R.id.dms).setOnClickListener {
+            startActivity(Intent(requireContext(), Dms::class.java))
+        }
+
+        root.findViewById<ImageView>(R.id.poststory).setOnClickListener {
+            startActivity(Intent(requireContext(), story_edit::class.java))
+        }
 
         return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
