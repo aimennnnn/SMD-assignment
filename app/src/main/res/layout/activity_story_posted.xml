@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Fullscreen story image -->
     <ImageView
         android:id="@+id/imgStory"
         android:layout_width="match_parent"
@@ -11,65 +10,49 @@
         android:scaleType="centerCrop"
         android:src="@drawable/aimen" />
 
-    <!-- TOP: avatar + handle + age, close & more -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_gravity="top"
+        android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingStart="12dp"
-        android:paddingEnd="12dp">
+        android:paddingEnd="12dp"
+        android:layout_marginTop="12dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-            <!-- circular avatar with initials -->
-            <TextView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:background="@drawable/circle_blue"
-                android:gravity="center"
-                android:text="g."
-                android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aimen" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="gursky.studio  •  11h"
+                android:text="elmon_420  •  1 min"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-
         <ImageView
+            android:id="@+id/btnClose"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:background="@drawable/circle_dark_translucent"
             android:padding="6dp"
-            android:src="@android:drawable/ic_menu_close_clear_cancel"
-            android:tint="#FFFFFF" />
-
-        <Space android:layout_width="8dp" android:layout_height="1dp"/>
-
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:background="@drawable/circle_dark_translucent"
-            android:padding="6dp"
-            android:src="@android:drawable/ic_menu_more"
-            android:tint="#FFFFFF" />
+            android:src="@drawable/x" />
     </LinearLayout>
 
-    <!-- LEFT: floating hearts -->
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,12 +83,10 @@
             android:textSize="14sp" />
     </LinearLayout>
 
-    <!-- BOTTOM BAR: Activity · Create · Facebook · Highlight · More -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:layout_gravity="bottom"
-        android:background="@drawable/bottom_bar_bg"
         android:gravity="center"
         android:paddingHorizontal="8dp"
         android:paddingTop="6dp">
@@ -125,21 +106,29 @@
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_gravity="start|center_vertical"
-                    android:background="@drawable/circle_avatar1" />
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cat" />
 
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="10dp"
-                    android:background="@drawable/circle_avatar2" />
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ching" />
 
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_gravity="end|center_vertical"
-                    android:background="@drawable/circle_avatar3" />
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moob" />
+
             </FrameLayout>
 
             <TextView
@@ -151,7 +140,6 @@
                 android:textSize="12sp" />
         </LinearLayout>
 
-        <!-- 2. Create -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -161,8 +149,7 @@
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@android:drawable/ic_menu_edit"
-                android:tint="#FFFFFF"/>
+                android:src="@drawable/reel" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -172,7 +159,6 @@
                 android:textSize="12sp"/>
         </LinearLayout>
 
-        <!-- 3. Facebook -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -182,8 +168,7 @@
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@android:drawable/ic_menu_share"
-                android:tint="#FFFFFF"/>
+                android:src="@drawable/facebook" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -193,7 +178,6 @@
                 android:textSize="12sp"/>
         </LinearLayout>
 
-        <!-- 4. Highlight -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -203,8 +187,7 @@
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@android:drawable/ic_menu_gallery"
-                android:tint="#FFFFFF"/>
+                android:src="@drawable/highlight" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -214,18 +197,17 @@
                 android:textSize="12sp"/>
         </LinearLayout>
 
-        <!-- 5. More -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
+
             <ImageView
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:src="@android:drawable/ic_menu_more"
-                android:tint="#FFFFFF"/>
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/option"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -2,147 +2,149 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@android:color/black">
 
-    <!-- Fullscreen photo -->
-    <ImageView
+     <ImageView
         android:id="@+id/imgStory"
         android:layout_width="match_parent"
-        android:layout_height="810dp"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/moob" />
+        android:src="@drawable/aimen" />
 
-    <!-- TOP CONTROLS -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:gravity="center_vertical"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
-        android:layout_gravity="top">
+        android:paddingTop="8dp">
 
-        <!-- Close -->
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:background="@drawable/circle_dark_translucent"
-            android:padding="6dp"
-            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+        <ImageButton
+            android:id="@+id/x"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/x"
+            android:background="@drawable/corcol"
+            android:contentDescription="idk"
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
+            />
 
-        <!-- Action icons (share, Aa, sticker, effects, music, more) -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_dark_translucent"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_menu_share" />
+            <ImageButton
+                android:id="@+id/partnership"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/partnership"
+                android:background="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:contentDescription="idk"
+                />
 
-            <Space android:layout_width="6dp" android:layout_height="1dp"/>
+            <ImageButton
+                android:id="@+id/text"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/text"
+                android:background="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="idk"
+                />
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_dark_translucent"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_menu_edit" />
+            <ImageButton
+                android:id="@+id/sticker"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/sticker"
+                android:background="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:contentDescription="idk"
+                android:layout_marginStart="8dp" />
 
-            <Space android:layout_width="6dp" android:layout_height="1dp"/>
+            <ImageButton
+                android:id="@+id/music"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/music"
+                android:background="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="idk"
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_dark_translucent"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_menu_gallery" />
+                />
 
-            <Space android:layout_width="6dp" android:layout_height="1dp"/>
+            <ImageButton
+                android:id="@+id/filters"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/filters"
+                android:background="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="idk"
+                />
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_dark_translucent"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_menu_manage" />
+            <ImageButton
+                android:id="@+id/btnMore"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/option"
+                android:background="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="idk"
+                />
 
-            <Space android:layout_width="6dp" android:layout_height="1dp"/>
-
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_dark_translucent"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_btn_speak_now" />
-
-            <Space android:layout_width="6dp" android:layout_height="1dp"/>
-
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_dark_translucent"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_menu_more" />
         </LinearLayout>
     </LinearLayout>
 
-    <!-- BOTTOM SHEET BUTTONS -->
-    <LinearLayout
+     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="60dp"
         android:layout_gravity="bottom"
-        android:background="@drawable/bottom_sheet_round"
-        android:padding="12dp"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp" >
 
-        <!-- Your stories pill -->
-        <LinearLayout
-            android:id="@+id/btnYourStories"
+        <TextView
+            android:id="@+id/btnYourStory"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/pill_dark"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="14dp">
+            android:gravity="center"
+            android:background="@drawable/story"
+            android:padding="10dp" />
 
-            <!-- small red counter -->
-            <TextView
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="9"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Your stories"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <Space
-            android:layout_width="10dp"
-            android:layout_height="1dp" />
-
-        <!-- Close friends pill -->
-        <LinearLayout
+        <TextView
             android:id="@+id/btnCloseFriends"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/pill_dark"
-            android:gravity="center_vertical"
-            android:padd
+            android:gravity="center"
+            android:background="@drawable/close_friends"
+            android:padding="10dp"
+            android:layout_marginStart="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/nextt"
+             android:layout_marginStart="8dp"
+            android:contentDescription="idk"
+            />
+    </LinearLayout>
+
+</FrameLayout>

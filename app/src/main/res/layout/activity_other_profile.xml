@@ -204,13 +204,13 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="36dp"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     android:background="@drawable/searchbox"
                     android:gravity="center"
                     android:text="Following"
                     android:textAllCaps="false"
-                     android:textSize="14sp"
+                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Space
@@ -219,13 +219,13 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="36dp"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     android:background="@drawable/searchbox"
                     android:gravity="center"
                     android:text="Message"
                     android:textAllCaps="false"
-                     android:textSize="14sp"
+                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Space
@@ -234,13 +234,13 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="36dp"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     android:background="@drawable/searchbox"
                     android:gravity="center"
                     android:text="Email"
                     android:textAllCaps="false"
-                     android:textSize="14sp"
+                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Space
@@ -248,8 +248,8 @@
                     android:layout_height="1dp" />
 
                 <ImageButton
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:background="@drawable/btn_outline"
                     android:contentDescription="More actions"
                     android:padding="6dp"
@@ -300,8 +300,7 @@
                         android:paddingEnd="10dp">
 
                         <ImageView
-                            android:id="@+id/story11"
-                            android:layout_width="64dp"
+                            android:id="@+id/story12"                            android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/circle"
                             android:clipToOutline="true"
@@ -325,7 +324,7 @@
                         android:paddingEnd="10dp">
 
                         <ImageView
-                            android:id="@+id/story11"
+                            android:id="@+id/story13"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/circle"

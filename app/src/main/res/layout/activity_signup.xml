@@ -59,10 +59,12 @@
         <EditText
             android:id="@+id/inputusername"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:hint="."
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -76,10 +78,11 @@
         <EditText
             android:id="@+id/inputfirstname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:hint="."/>
 
         <TextView
             android:layout_width="match_parent"
@@ -93,10 +96,11 @@
         <EditText
             android:id="@+id/inputLastname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:hint="."/>
 
         <TextView
             android:layout_width="match_parent"
@@ -110,10 +114,11 @@
         <EditText
             android:id="@+id/inputdob"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
-            android:inputType="date"/>
+            android:inputType="date"
+            android:hint="."/>
 
         <TextView
             android:layout_width="match_parent"
@@ -127,10 +132,11 @@
         <EditText
             android:id="@+id/inputemail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:hint="."/>
 
         <TextView
             android:layout_width="match_parent"
@@ -144,14 +150,14 @@
         <EditText
             android:id="@+id/inputpassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:hint="."/>
 
-        <!-- Register button -->
-        <Button
-            android:id="@+id/btnRegister"
+         <Button
+            android:id="@+id/createanaccount"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:layout_marginTop="20dp"

@@ -57,6 +57,7 @@
              android:layout_gravity="center" />
 
          <ImageView
+             android:id="@+id/endcall"
             android:layout_width="10dp"
             android:layout_height="70dp"
             android:layout_weight="1"

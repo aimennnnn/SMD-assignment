@@ -9,8 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Top bar -->
-        <RelativeLayout
+         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="25dp"
@@ -45,8 +44,7 @@
                 android:textStyle="bold" />
         </RelativeLayout>
 
-        <!-- Profile photo -->
-        <LinearLayout
+         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -98,7 +96,7 @@
                 <EditText
                     android:id="@+id/Name"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:hint="Name"
@@ -130,7 +128,7 @@
                 <EditText
                     android:id="@+id/Username"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:hint="Username"
@@ -162,7 +160,7 @@
                  <EditText
                      android:id="@+id/website"
                      android:layout_width="0dp"
-                     android:layout_height="wrap_content"
+                     android:layout_height="48dp"
                      android:layout_weight="2"
                      android:background="@android:color/transparent"
                      android:hint="Website"
@@ -193,8 +191,8 @@
 
                  <EditText
                      android:id="@+id/bio"
+                     android:layout_height="48dp"
                      android:layout_width="0dp"
-                     android:layout_height="wrap_content"
                      android:layout_weight="2"
                      android:background="@android:color/transparent"
                      android:hint="Bio"
@@ -247,7 +245,7 @@
                  <EditText
                      android:id="@+id/Email"
                      android:layout_width="0dp"
-                     android:layout_height="wrap_content"
+                     android:layout_height="48dp"
                      android:layout_weight="2"
                       android:background="@android:color/transparent"
                      android:hint="Email"
@@ -278,7 +276,7 @@
                  <EditText
                      android:id="@+id/Phone"
                      android:layout_width="0dp"
-                     android:layout_height="wrap_content"
+                     android:layout_height="48dp"
                      android:layout_weight="2"
                      android:background="@android:color/transparent"
                      android:hint="Phone Number"
@@ -309,7 +307,7 @@
                  <EditText
                      android:id="@+id/Gender"
                      android:layout_width="0dp"
-                     android:layout_height="wrap_content"
+                     android:layout_height="48dp"
                      android:layout_weight="2"
                      android:background="@android:color/transparent"
                      android:hint="Gender"

@@ -55,7 +55,7 @@
             android:src="@drawable/info" />
 
         <ImageView
-            android:id="@+id/btnInfo"
+            android:id="@+id/btncall"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_toStartOf="@id/btnVideo"
@@ -114,15 +114,18 @@
                 android:src="@drawable/camerabl" />
 
             <EditText
-                android:id="@+id/Message"
+                android:id="@+id/etReply"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:layout_weight="1"
-                android:hint="Message..."
-                android:textColor="#FF222222"
-                android:textColorHint="#80222222"
-                android:textSize="14dp" />
+                android:hint="send message"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="10dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#99FFFFFF"
+                android:inputType="text"
+                android:maxLines="1"/>
 
             <ImageView
                 android:layout_width="24dp"

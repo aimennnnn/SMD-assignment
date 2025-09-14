@@ -2,14 +2,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Tabs -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -17,6 +16,7 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/tvFollowing"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -24,9 +24,10 @@
                 android:text="Following"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#888888" />
+                android:textColor="#B71C1C" />
 
             <TextView
+                android:id="@+id/tvYou"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -34,21 +35,18 @@
                 android:text="You"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#B71C1C" />
+                android:textColor="#888888" />
         </LinearLayout>
 
-        <!-- Follow Requests -->
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:text="Follow Requests"
             android:textColor="#B71C1C"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textSize="14sp" />
 
-        <!-- Section: New -->
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="12dp"
@@ -65,29 +63,30 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/moob"
+                android:background="@drawable/circle"
                 android:scaleType="centerCrop"
-                android:background="@drawable/bg_circle" />
+                android:clipToOutline="true"/>
 
             <TextView
+                android:id="@+id/val1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:text="karennne liked your photo. 1h"
+                android:text="thelilghaza liked your photo. 1h"
                 android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/mahin"
                 android:scaleType="centerCrop" />
         </LinearLayout>
 
-        <!-- Section: Today -->
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="12dp"
@@ -104,29 +103,29 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/flower"
+                android:background="@drawable/circle"
                 android:scaleType="centerCrop"
-                android:background="@drawable/bg_circle" />
+                android:clipToOutline="true"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:text="kiero_d, zackjohn and 26 others liked your photo. 3h"
+                android:text="maryam_moeen and 26 others liked your photo. 3h"
                 android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/creepy_anu"
                 android:scaleType="centerCrop" />
         </LinearLayout>
 
-        <!-- Section: This Week -->
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="12dp"
@@ -135,8 +134,7 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <!-- Comment -->
-        <LinearLayout
+         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -144,11 +142,12 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/alina"
+                android:background="@drawable/circle"
                 android:scaleType="centerCrop"
-                android:background="@drawable/bg_circle" />
+                android:clipToOutline="true"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -160,7 +159,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="craig_love mentioned you in a comment: @jacob_w exactly.. 2d"
+                    android:text="Alina.x_x mentioned you in a comment: @jacob_w exactly.. 2d"
                     android:textSize="14sp" />
 
                 <TextView
@@ -174,12 +173,11 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/cat"
                 android:scaleType="centerCrop" />
         </LinearLayout>
 
-        <!-- Follow actions -->
-        <LinearLayout
+         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -187,25 +185,32 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/anu"
+                android:background="@drawable/circle"
                 android:scaleType="centerCrop"
-                android:background="@drawable/bg_circle" />
+                android:clipToOutline="true"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:text="martini_rond started following you. 3d"
+                android:text="Aaniyah started following you. 3d"
                 android:textSize="14sp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/message"
+                android:gravity="center"
                 android:text="Message"
-                android:textSize="12sp" />
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -216,25 +221,30 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/mew"
+                android:background="@drawable/circle"
                 android:scaleType="centerCrop"
-                android:background="@drawable/bg_circle" />
+                android:clipToOutline="true"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:text="maxjacobson started following you. 3d"
+                android:text="monsieurniskit started following you. 3d"
                 android:textSize="14sp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/message"
+                android:gravity="center"
                 android:text="Message"
-                android:textSize="12sp" />
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -245,31 +255,34 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/alina"
+                android:background="@drawable/circle"
                 android:scaleType="centerCrop"
-                android:background="@drawable/bg_circle" />
+                android:clipToOutline="true"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:text="mis_potter started following you. 3d"
+                android:text="Alina.x_x started following you. d"
                 android:textSize="14sp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
-                android:backgroundTint="#B71C1C"
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
                 android:text="Follow"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Section: This Month -->
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="12dp"

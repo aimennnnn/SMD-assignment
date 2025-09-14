@@ -52,7 +52,7 @@
      <EditText
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_below="@id/topBar"
         android:layout_margin="12dp"
         android:background="@drawable/searchbox"
@@ -78,6 +78,7 @@
             android:orientation="vertical">
 
              <RelativeLayout
+                 android:id="@+id/msg1"
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:paddingStart="12dp"
@@ -195,7 +196,7 @@
                     android:textColor="#99222222" />
 
                 <ImageView
-                    android:id="@+id/cam1"
+                    android:id="@+id/cam2"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_alignParentEnd="true"
@@ -258,7 +259,7 @@
                     android:textColor="#99222222" />
 
                 <ImageView
-                    android:id="@+id/cam1"
+                    android:id="@+id/cam3"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_alignParentEnd="true"
@@ -321,7 +322,7 @@
                     android:textColor="#99222222" />
 
                 <ImageView
-                    android:id="@+id/cam1"
+                    android:id="@+id/cam4"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_alignParentEnd="true"
@@ -384,7 +385,7 @@
                     android:textColor="#99222222" />
 
                 <ImageView
-                    android:id="@+id/cam1"
+                    android:id="@+id/cam5"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_alignParentEnd="true"

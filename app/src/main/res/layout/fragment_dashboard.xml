@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
-    <?xml version="1.0" encoding="utf-8"?>
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/white">
 
-         <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:orientation="horizontal"
@@ -21,6 +21,7 @@
             android:padding="10dp">
 
             <ImageView
+                android:id="@+id/story"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/camera"/>
@@ -35,6 +36,7 @@
                 android:textSize="18sp"/>
 
             <ImageView
+                android:id="@+id/dms"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/share"/>
@@ -58,6 +60,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/poststory"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/aimen"
@@ -71,31 +74,32 @@
                         android:text="Your Story"
                         android:textSize="12sp"
                         android:gravity="center"/>
-
                 </LinearLayout>
-            <LinearLayout
-                android:layout_width="85dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/flower"
-                    android:background="@drawable/circle"
-                    android:scaleType="centerCrop"
-                    android:clipToOutline="true"/>
+                 <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="maryam_moeen"
-                    android:textSize="12sp"
-                    android:gravity="center"/>
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/moosvi"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/moob"
+                        android:background="@drawable/circle"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"/>
 
-                <LinearLayout
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="thelilghaza"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                 <LinearLayout
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -104,7 +108,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/ching"
+                        android:src="@drawable/alina"
                         android:background="@drawable/circle"
                         android:scaleType="centerCrop"
                         android:clipToOutline="true"/>
@@ -115,10 +119,9 @@
                         android:text="alina.x_x"
                         android:textSize="12sp"
                         android:gravity="center"/>
-
                 </LinearLayout>
 
-                <LinearLayout
+                 <LinearLayout
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -138,10 +141,9 @@
                         android:text="Aaniyah"
                         android:textSize="12sp"
                         android:gravity="center"/>
-
                 </LinearLayout>
 
-                <LinearLayout
+                 <LinearLayout
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -161,7 +163,6 @@
                         android:text="Ibtehaj Kazmi"
                         android:textSize="12sp"
                         android:gravity="center"/>
-
                 </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
@@ -171,7 +172,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -181,12 +182,10 @@
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:contentDescription="TODO"
                     android:src="@drawable/moob"
                     android:background="@drawable/circle"
                     android:scaleType="centerCrop"
-                    android:clipToOutline="true"
-                />
+                    android:clipToOutline="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -234,12 +233,12 @@
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:layout_marginStart="250dp"
                     android:layout_weight="1"
+                    android:layout_marginStart="250dp"
                     android:src="@drawable/save" />
             </LinearLayout>
 
-             <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Liked by elmon_420 and others"
@@ -252,12 +251,13 @@
                 android:paddingStart="8dp"
                 android:text="thelilghaza MOGGING"/>
         </LinearLayout>
-        <LinearLayout
+
+         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -267,12 +267,10 @@
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:contentDescription="TODO"
                     android:src="@drawable/moob"
                     android:background="@drawable/circle"
                     android:scaleType="centerCrop"
-                    android:clipToOutline="true"
-                    />
+                    android:clipToOutline="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -314,12 +312,12 @@
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:layout_marginStart="250dp"
                     android:layout_weight="1"
+                    android:layout_marginStart="250dp"
                     android:src="@drawable/save" />
             </LinearLayout>
 
-             <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Liked by elmon_420 and others"
@@ -332,6 +330,6 @@
                 android:paddingStart="8dp"
                 android:text="thelilghaza MOGGING"/>
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
