@@ -1,37 +1,37 @@
 package com.example.myapplication.ui.liked
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.FragmentLikedBinding
+import com.example.myapplication.R
+import com.example.myapplication.likedtwo   // <-- make sure likedtwo is an Activity
 
 class LikedFragment : Fragment() {
 
     private var _binding: FragmentLikedBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var viewModel: LikedViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(LikedViewModel::class.java)
-
         _binding = FragmentLikedBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val root = binding.root
 
-        val textView: TextView = binding.textLiked
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        viewModel = ViewModelProvider(this)[LikedViewModel::class.java]
+
+        root.findViewById<View>(R.id.tvFollowing).setOnClickListener {
+            val intent = Intent(requireContext(), likedtwo::class.java)
+            startActivity(intent)
         }
+
         return root
     }
 
